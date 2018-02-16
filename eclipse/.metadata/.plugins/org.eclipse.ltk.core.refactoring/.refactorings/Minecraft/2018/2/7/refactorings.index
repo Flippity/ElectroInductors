@@ -1,0 +1,26 @@
+1518577468334	Move compilation unit
+1518579810764	Rename type 'CogRenderer'
+1518580020482	Move compilation unit
+1518580126523	Rename type 'GenericBlockItemRenderer'
+1518580241098	Delete element
+1518582492733	Move compilation unit
+1518648910172	Move compilation unit
+1518653578491	Delete elements
+1518655398886	Copy compilation unit
+1518655408939	Copy compilation unit
+1518656108483	Rename type 'BlockCable'
+1518656116371	Delete element
+1518656119162	Delete element
+1518656121670	Delete element
+1518656528333	Rename type 'TECable'
+1518656603670	Delete element
+1518656629191	Rename type 'ItemRendererCog'
+1518656723195	Delete element
+1518656745497	Delete element
+1518658214549	Rename type 'RendererCable'
+1518658219936	Rename type 'ItemRendererCable'
+1518658229689	Delete element
+1518658238101	Rename type 'ModelCableCube'
+1518754171517	Rename resource 'electricalCopperCableTexture.png'
+1518792620065	Rename resource 'BlockCableCopper.png'
+1518792923551	Rename resource 'MISSING_ICON_BLOCK_165_BlockCableCopper.png'

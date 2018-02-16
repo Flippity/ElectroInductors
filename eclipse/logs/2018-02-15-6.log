@@ -1,0 +1,20 @@
+[23:13:00] [main/INFO]: Setting user: Player793
+[23:13:02] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:13:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[23:13:16] [Sound Library Loader/INFO]: Sound engine started
+[23:13:26] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[23:13:26] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[23:13:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[23:13:27] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:13:27] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:13:28] [Sound Library Loader/INFO]: Sound engine started
+[23:16:08] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[23:16:08] [Server thread/INFO]: Generating keypair
+[23:16:09] [Server thread/INFO]: Preparing start region for level 0
+[23:16:10] [Server thread/INFO]: Changing view distance to 12, from 10
+[23:16:10] [Server thread/INFO]: Player793[local:E:1bfa5697] logged in with entity id 291 at (-153.92493007310716, 72.0, 278.52867634339543)
+[23:16:10] [Server thread/INFO]: Player793 joined the game
+[23:16:14] [Server thread/INFO]: Saving and pausing game...
+[23:16:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:16:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:16:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End

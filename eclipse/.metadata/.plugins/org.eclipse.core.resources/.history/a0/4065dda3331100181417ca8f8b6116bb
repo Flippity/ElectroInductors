@@ -1,0 +1,5 @@
+package com.flippity.ei.server;
+
+public class ServerProxy {
+
+}

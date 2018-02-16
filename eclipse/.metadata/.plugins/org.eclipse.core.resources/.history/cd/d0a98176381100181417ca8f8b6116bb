@@ -1,0 +1,13 @@
+package com.flippity.ei.common.blocks;
+
+import com.flippity.ei.common.blocks.cogs.BlockCog;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+
+public class BlockRegistry {
+	public static void initBlocks() {
+		Block BlockCog = new BlockCog(null, "BlockCog");
+		GameRegistry.registerBlock(BlockCog, "BlockCog");
+	}
+}

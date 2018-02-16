@@ -1,0 +1,54 @@
+package com.flippity.ei;
+
+import java.util.logging.Logger;
+
+import com.flippity.ei.client.ClientProxy;
+import com.flippity.ei.common.CommonProxy;
+import com.flippity.ei.reference.Reference;
+
+import cpw.mods.fml.client.registry.ClientRegistry;
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.IWorldGenerator;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.world.World;
+import net.minecraftforge.common.ForgeHooks;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.oredict.OreDictionary;
+
+@Mod(name = Reference.MOD_NAME, modid = Reference.MOD_ID, version = Reference.MOD_VER, dependencies="after:ForgeMultipart")
+
+public class ElectroInductors {
+
+
+	// ===================================================================\\
+	// ==============================Proxy=================================\\
+	// =====================================================================\\
+
+	@SidedProxy(clientSide = "com.flippity.ei.client.ClientProxy", serverSide = "com.flippity.ei.server.ServerProxy")
+	public static CommonProxy proxy;
+
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+
+		ClientProxy.registerRenderers();
+
+	}
+
+	@Mod.EventHandler
+	public void init(FMLInitializationEvent event) {
+
+	}
+
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+	}
+
+}

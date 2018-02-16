@@ -1,0 +1,7 @@
+package com.flippity.ei.common.tiles;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TECog extends TileEntity{
+
+}

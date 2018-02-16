@@ -1,0 +1,45 @@
+package com.flippity.ei.client;
+
+import com.flippity.ei.client.renderers.GenericItemBlockRenderer;
+import com.flippity.ei.client.renderers.cogs.ItemRendererCog;
+import com.flippity.ei.client.renderers.cogs.RendererCog;
+import com.flippity.ei.common.CommonProxy;
+import com.flippity.ei.common.blocks.BlockRegistry;
+import com.flippity.ei.common.tiles.cogs.TECog;
+
+import cpw.mods.fml.client.registry.ClientRegistry;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.MinecraftForgeClient;
+
+public class ClientProxy extends CommonProxy {
+
+	public static void registerRenderers() {
+
+		registerItemRenderers();
+		ClientRegistry.bindTileEntitySpecialRenderer(TECog.class, new RendererCog());
+	}
+	
+	public static void registerItemRenderers() {
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockRegistry.blockCog), new GenericItemBlockRenderer(new TECog(), new RendererCog()));
+	}
+
+	@Override
+	public void preInit(FMLPreInitializationEvent e) {
+		super.preInit(e);
+	}
+
+	@Override
+	public void init(FMLInitializationEvent e) {
+		super.init(e);
+	}
+
+	@Override
+	public void postInit(FMLPostInitializationEvent e) {
+		super.postInit(e);
+
+	}
+
+}

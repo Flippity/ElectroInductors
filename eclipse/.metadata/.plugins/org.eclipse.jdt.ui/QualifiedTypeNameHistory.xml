@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.flippity.ei.common.CommonProxy"/>
+<fullyQualifiedTypeName name="com.flippity.ei.reference.Reference"/>
+<fullyQualifiedTypeName name="com.flippity.ei.common.blocks.cogs.BlockCog"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
+<fullyQualifiedTypeName name="com.flippity.ei.common.blocks.BlockRegistry"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.client.registry.ClientRegistry"/>
+<fullyQualifiedTypeName name="com.flippity.ei.client.renderers.cogs.CogRenderer"/>
+<fullyQualifiedTypeName name="net.minecraftforge.client.MinecraftForgeClient"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="com.flippity.ei.client.models.cogs.ItemRendererCog"/>
+<fullyQualifiedTypeName name="com.flippity.ei.client.renderers.GenericItemBlockRenderer"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+<fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.relauncher.SideOnly"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
+<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
+<fullyQualifiedTypeName name="com.flippity.ei.common.tiles.TECog"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockContainer"/>
+</qualifiedTypeNameHistroy>

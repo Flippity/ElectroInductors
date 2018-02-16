@@ -1,0 +1,31 @@
+package com.flippity.ei.common.tiles;
+
+import com.flippity.ei.common.blocks.BlockRegistry;
+
+import codechicken.lib.vec.Cuboid6;
+import codechicken.microblock.MicroblockClass;
+import codechicken.microblock.PlacementGrid;
+import codechicken.microblock.PlacementProperties;
+import codechicken.multipart.minecraft.McMetaPart;
+import net.minecraft.block.Block;
+
+public class CogPart extends PlacementProperties {
+
+	@Override
+	public MicroblockClass microClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int opposite(int arg0, int arg1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public PlacementGrid placementGrid() {
+		return null;
+	}
+
+}

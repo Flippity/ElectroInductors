@@ -1,0 +1,69 @@
+package com.flippity.ei.client.models.wheels;
+
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+
+/**
+ * ModelWoodenCog - Flippity
+ * Created using Tabula 7.0.0
+ */
+public class ModelWheel extends ModelBase {
+    public ModelRenderer middle1;
+    public ModelRenderer middle2;
+    public ModelRenderer quarter1;
+    public ModelRenderer quarter2;
+    public ModelRenderer quarter3;
+    public ModelRenderer quarter4;
+    public ModelRenderer connector;
+
+    public ModelWheel() {
+        this.textureWidth = 32;
+        this.textureHeight = 32;
+        this.quarter3 = new ModelRenderer(this, 0, 0);
+        this.quarter3.setRotationPoint(18.6F, 9.85F, 0.0F);
+        this.quarter3.addBox(-8.0F, 14.0F, 6.0F, 7, 7, 2, 0.0F);
+        this.setRotateAngle(quarter3, 0.0F, 0.0F, 0.7853981633974483F);
+        this.quarter2 = new ModelRenderer(this, 0, 0);
+        this.quarter2.setRotationPoint(18.6F, 3.75F, 0.0F);
+        this.quarter2.addBox(-8.0F, 14.0F, 6.0F, 7, 7, 2, 0.0F);
+        this.setRotateAngle(quarter2, 0.0F, 0.0F, 0.7853981633974483F);
+        this.quarter1 = new ModelRenderer(this, 0, 0);
+        this.quarter1.setRotationPoint(12.5F, 3.75F, 0.0F);
+        this.quarter1.addBox(-8.0F, 14.0F, 6.0F, 7, 7, 2, 0.0F);
+        this.setRotateAngle(quarter1, 0.0F, 0.0F, 0.7853981633974483F);
+        this.quarter4 = new ModelRenderer(this, 0, 0);
+        this.quarter4.setRotationPoint(12.5F, 9.85F, 0.0F);
+        this.quarter4.addBox(-8.0F, 14.0F, 6.0F, 7, 7, 2, 0.0F);
+        this.setRotateAngle(quarter4, 0.0F, 0.0F, 0.7853981633974483F);
+        this.connector = new ModelRenderer(this, 0, 0);
+        this.connector.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.connector.addBox(-2.0F, 14.0F, 5.0F, 4, 4, 1, 0.0F);
+        this.middle2 = new ModelRenderer(this, 0, 0);
+        this.middle2.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.middle2.addBox(-8.0F, 13.0F, 6.0F, 16, 6, 2, 0.0F);
+        this.middle1 = new ModelRenderer(this, 0, 0);
+        this.middle1.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.middle1.addBox(-3.0F, 8.0F, 6.0F, 6, 16, 2, 0.0F);
+    }
+
+    @Override
+    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) { 
+        this.quarter3.render(f5);
+        this.quarter2.render(f5);
+        this.quarter1.render(f5);
+        this.quarter4.render(f5);
+        this.connector.render(f5);
+        this.middle2.render(f5);
+        this.middle1.render(f5);
+    }
+
+    /**
+     * This is a helper function from Tabula to set the rotation of model parts
+     */
+    public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+        modelRenderer.rotateAngleX = x;
+        modelRenderer.rotateAngleY = y;
+        modelRenderer.rotateAngleZ = z;
+    }
+}

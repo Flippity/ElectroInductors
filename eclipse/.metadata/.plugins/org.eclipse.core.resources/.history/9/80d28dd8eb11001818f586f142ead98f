@@ -1,0 +1,7 @@
+package com.flippity.ei.common.tiles.cables;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TECable extends TileEntity{
+
+}

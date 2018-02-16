@@ -1,0 +1,5 @@
+package com.flippity.ei.client.models.wheels;
+
+public class ItemRendererWheel {
+
+}

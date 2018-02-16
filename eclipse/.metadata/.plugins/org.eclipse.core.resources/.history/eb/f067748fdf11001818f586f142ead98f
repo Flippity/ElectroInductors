@@ -1,0 +1,13 @@
+package com.flippity.ei.common.tiles;
+
+import codechicken.multipart.TMultiPart;
+
+public class CogPart extends TMultiPart {
+
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

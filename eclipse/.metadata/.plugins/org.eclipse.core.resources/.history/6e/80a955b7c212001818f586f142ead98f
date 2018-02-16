@@ -1,0 +1,29 @@
+package com.flippity.ei.client.renderers.cables;
+
+import org.lwjgl.opengl.GL11;
+
+import com.flippity.ei.client.models.cables.ModelCable;
+import com.flippity.ei.common.blocks.cables.BlockCableCopper;
+
+import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.entity.Entity;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
+
+public class RendererCableCopper extends TileEntitySpecialRenderer {
+    private static final ResourceLocation resourceloc = new ResourceLocation(com.flippity.ei.reference.Reference.MOD_ID + ":" + "textures/blocks/electricalCopperCableTexture.png");
+
+    @Override
+    public void renderTileEntityAt(TileEntity te, double x, double y, double z, float scale) {    	
+
+		}
+
+    //Set the lighting stuff, so it changes it's brightness properly.       
+    private void adjustLightFixture(World world, int i, int j, int k, Block block) {
+    float light = world.getLightBrightness(i, j, k);
+    block.setLightOpacity((int) light);
+    }
+}
