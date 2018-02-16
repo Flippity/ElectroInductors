@@ -1,0 +1,16 @@
+[
+{
+  "modid": "EI",
+  "name": "ElectroInducers",
+  "description": "This mod will explore the evolution in technology, passing about through research is the answer to many of life's problems.",
+  "version": "1.0.0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Flippity"],
+  "credits": "Flippity",
+  "logoFile": "ElectroInducersLogo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
