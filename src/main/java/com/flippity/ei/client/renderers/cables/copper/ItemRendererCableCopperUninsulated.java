@@ -1,6 +1,6 @@
 package com.flippity.ei.client.renderers.cables.copper;
 
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperUninsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperUninsulated;
 
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemStack;

@@ -2,7 +2,7 @@ package com.flippity.ei.client.renderers.cables.copper;
 
 import org.lwjgl.opengl.GL11;
 
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperUninsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperUninsulated;
 import com.flippity.ei.reference.Reference;
 
 import net.minecraft.block.Block;

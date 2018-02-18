@@ -1,8 +1,8 @@
 package com.flippity.ei.common.blocks.base.cables.superconductor;
 
 import com.flippity.ei.client.gui.Tabs;
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperUninsulated;
-import com.flippity.ei.common.tiles.cables.superconductor.TECableSuperconductorUninsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperUninsulated;
+import com.flippity.ei.common.tiles.base.cables.superconductor.TECableSuperconductorUninsulated;
 import com.flippity.ei.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -18,9 +18,9 @@ public class BlockCableSuperconductorUninsulated extends BlockContainer{
 		super(Material.cloth);
 		float pix = 1/16F;
 		this.setBlockName("BlockCableSuperconductorUninsulated");
-		this.setBlockTextureName(Reference.MOD_ID + ":" + "textures/blocks/BlockCableSuperconductorUninsulated.png");
-		this.setCreativeTab(Tabs.tabBlocks);
-		this.setBlockBounds(pix*3, pix*3, pix*3, 1-pix*3, 1-pix*3, 1-pix*3);
+		this.setBlockTextureName(Reference.MOD_ID + ":" + "BlockCableSuperconductorUninsulated.png");
+		this.setCreativeTab(Tabs.tabBase);
+		this.setBlockBounds(pix*4.5F, pix*4.5F, pix*4.5F, 1-pix*4.5F, 1-pix*4.5F, 1-pix*4.5F);
 		this.setHardness(.5F);
 		this.setLightOpacity(0);
 	}

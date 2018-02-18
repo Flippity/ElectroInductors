@@ -1,7 +1,7 @@
 package com.flippity.ei.client.renderers.cables.superconducter;
 
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperUninsulated;
-import com.flippity.ei.common.tiles.cables.superconductor.TECableSuperconductorInsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperUninsulated;
+import com.flippity.ei.common.tiles.base.cables.superconductor.TECableSuperconductorInsulated;
 
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemStack;

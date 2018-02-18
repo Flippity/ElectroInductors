@@ -4,9 +4,9 @@ import java.util.List;
 
 import com.flippity.ei.client.gui.Tabs;
 import com.flippity.ei.common.items.base.cables.superconductor.ItemBlockCableSuperconductorInsulated;
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperInsulated;
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperUninsulated;
-import com.flippity.ei.common.tiles.cables.superconductor.TECableSuperconductorInsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperInsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperUninsulated;
+import com.flippity.ei.common.tiles.base.cables.superconductor.TECableSuperconductorInsulated;
 import com.flippity.ei.reference.Reference;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -27,8 +27,8 @@ public class BlockCableSuperconductorInsulated extends BlockContainer{
 		float pix = 1/16F;
 		this.setBlockName("BlockCableSuperconductorInsulated");
 		this.setBlockTextureName(Reference.MOD_ID + ":" + "BlockCableSuperconductorInsulated.png");
-		this.setCreativeTab(Tabs.tabBlocks);
-		this.setBlockBounds(pix*3, pix*3, pix*3, 1-pix*3, 1-pix*3, 1-pix*3);
+		this.setCreativeTab(Tabs.tabBase);
+		this.setBlockBounds(pix*4.5F, pix*4.5F, pix*4.5F, 1-pix*4.5F, 1-pix*4.5F, 1-pix*4.5F);
 		this.setHardness(.5F);
 		this.setLightOpacity(0);
 		

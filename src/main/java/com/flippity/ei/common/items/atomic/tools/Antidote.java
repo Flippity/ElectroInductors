@@ -18,7 +18,7 @@ public class Antidote extends ItemFood {
 		super(healAmount, saturationModifier, wolvesFavorite);
 		this.setUnlocalizedName("antidote");
 		this.setTextureName(Reference.MOD_ID + ":antidote");
-		this.setCreativeTab(Tabs.tabItems);
+		this.setCreativeTab(Tabs.tabAtomic);
 		this.setAlwaysEdible();
 	}
 

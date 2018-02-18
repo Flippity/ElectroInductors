@@ -2,8 +2,8 @@ package com.flippity.ei.client.renderers.cables.copper;
 
 import org.lwjgl.opengl.GL11;
 
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperInsulated;
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperUninsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperInsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperUninsulated;
 import com.flippity.ei.reference.Reference;
 
 import net.minecraft.block.Block;
@@ -22,7 +22,7 @@ public class RendererCableCopperInsulated extends TileEntitySpecialRenderer {
 
     float texPixel = 1F/32F;
     
-    public void renderTileEntityAt(TileEntity te, double x, double y, double z, float scale) {    	
+    public void renderTileEntityAt(TileEntity te, double x, double y, double z, float scale) { 
     	GL11.glTranslated(x, y, z);
     	GL11.glDisable(GL11.GL_LIGHTING);
         this.bindTexture(resourceloc);

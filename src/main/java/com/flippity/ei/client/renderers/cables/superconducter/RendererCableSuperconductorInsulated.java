@@ -2,9 +2,9 @@ package com.flippity.ei.client.renderers.cables.superconducter;
 
 import org.lwjgl.opengl.GL11;
 
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperInsulated;
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperUninsulated;
-import com.flippity.ei.common.tiles.cables.superconductor.TECableSuperconductorInsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperInsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperUninsulated;
+import com.flippity.ei.common.tiles.base.cables.superconductor.TECableSuperconductorInsulated;
 import com.flippity.ei.reference.Reference;
 
 import net.minecraft.block.Block;

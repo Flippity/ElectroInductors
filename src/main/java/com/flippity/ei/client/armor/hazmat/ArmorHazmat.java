@@ -30,7 +30,7 @@ public class ArmorHazmat extends ItemArmor {
 		this.textureName = textureName;
 		this.setUnlocalizedName(unlocalizedName);
 		this.setTextureName(Reference.MOD_ID + ":" + unlocalizedName);
-		this.setCreativeTab(Tabs.tabItems);
+		this.setCreativeTab(Tabs.tabAtomic);
 		this.setMaxStackSize(1);
 		this.setNoRepair();
 		this.setMaxDamage(100000);

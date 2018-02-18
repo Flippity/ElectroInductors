@@ -22,7 +22,7 @@ public class ItemPuckUranium235 extends Item {
 
 	public ItemPuckUranium235() {
 		super();
-		this.setCreativeTab(Tabs.tabItems);
+		this.setCreativeTab(Tabs.tabAtomic);
 		this.setTextureName(Reference.MOD_ID + ":uraniumPuck");
 		this.setUnlocalizedName("uraniumPuck235");
 

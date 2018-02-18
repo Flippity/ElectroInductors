@@ -7,10 +7,10 @@ import com.flippity.ei.client.renderers.cables.superconducter.RendererCableSuper
 import com.flippity.ei.client.renderers.cables.superconducter.RendererCableSuperconductorUninsulated;
 import com.flippity.ei.common.CommonProxy;
 import com.flippity.ei.common.blocks.BlockRegistry;
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperInsulated;
-import com.flippity.ei.common.tiles.cables.copper.TECableCopperUninsulated;
-import com.flippity.ei.common.tiles.cables.superconductor.TECableSuperconductorInsulated;
-import com.flippity.ei.common.tiles.cables.superconductor.TECableSuperconductorUninsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperInsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperUninsulated;
+import com.flippity.ei.common.tiles.base.cables.superconductor.TECableSuperconductorInsulated;
+import com.flippity.ei.common.tiles.base.cables.superconductor.TECableSuperconductorUninsulated;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
