@@ -1,0 +1,33 @@
+[22:23:50] [main/INFO]: Setting user: Player798
+[22:23:53] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:24:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[22:24:11] [Sound Library Loader/INFO]: Sound engine started
+[22:24:24] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[22:24:24] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[22:24:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[22:24:28] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[22:24:28] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[22:24:29] [Sound Library Loader/INFO]: Sound engine started
+[22:28:10] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:28:10] [Server thread/INFO]: Generating keypair
+[22:28:11] [Server thread/INFO]: Preparing start region for level 0
+[22:28:12] [Server thread/INFO]: Preparing spawn area: 97%
+[22:28:12] [Server thread/INFO]: Changing view distance to 16, from 10
+[22:28:13] [Server thread/INFO]: Player798[local:E:18c1acd6] logged in with entity id 297 at (107.91596905791558, 68.0, 247.18080288012436)
+[22:28:13] [Server thread/INFO]: Player798 joined the game
+[22:28:14] [Server thread/INFO]: Saving and pausing game...
+[22:28:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:28:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:28:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:40:11] [main/INFO]: Setting user: Player56
+[22:40:14] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:40:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[22:40:38] [Sound Library Loader/INFO]: Sound engine started
+[22:40:48] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[22:40:48] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[22:40:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[22:40:52] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[22:40:52] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[22:40:53] [Sound Library Loader/INFO]: Sound engine started
+[08:53:21] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[08:53:22] [Server thread/INFO]: Generating keypair

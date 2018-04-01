@@ -1,0 +1,7 @@
+package com.flippity.ei.common.tiles.base.machines;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TECoalGenerator extends TileEntity {
+
+}

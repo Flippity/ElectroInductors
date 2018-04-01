@@ -1,0 +1,5 @@
+package com.flippity.ei.common.blocks;
+
+public class FluidRegistry {
+
+}

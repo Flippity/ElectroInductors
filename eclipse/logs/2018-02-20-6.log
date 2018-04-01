@@ -1,0 +1,34 @@
+[22:16:27] [main/INFO]: Setting user: Player548
+[22:16:29] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:16:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[22:16:45] [Sound Library Loader/INFO]: Sound engine started
+[22:16:50] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[22:16:50] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[22:16:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[22:16:53] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[22:16:53] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[22:16:54] [Sound Library Loader/INFO]: Sound engine started
+[22:17:06] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:17:06] [Server thread/INFO]: Generating keypair
+[22:17:06] [Server thread/INFO]: Preparing start region for level 0
+[22:17:07] [Server thread/INFO]: Changing view distance to 16, from 10
+[22:17:08] [Server thread/INFO]: Player548[local:E:a90da753] logged in with entity id 60 at (54.73059450242566, 50.0, 243.62307436244686)
+[22:17:08] [Server thread/INFO]: Player548 joined the game
+[22:17:09] [Server thread/INFO]: Saving and pausing game...
+[22:17:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:17:10] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:17:10] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:17:52] [Server thread/INFO]: Player548 has just earned the achievement [Taking Inventory]
+[22:17:52] [Client thread/INFO]: [CHAT] Player548 has just earned the achievement [Taking Inventory]
+[22:18:11] [Server thread/INFO]: Saving and pausing game...
+[22:18:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:18:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:18:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:18:12] [Client thread/INFO]: Stopping!
+[22:18:13] [Server thread/INFO]: Stopping server
+[22:18:13] [Server thread/INFO]: Saving players
+[22:18:13] [Server thread/INFO]: Saving worlds
+[22:18:13] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:18:13] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:18:13] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[22:18:23] [main/INFO]: Setting user: Player721

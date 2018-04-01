@@ -1,0 +1,24 @@
+[23:02:32] [main/INFO]: Setting user: Player343
+[23:02:34] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:02:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[23:02:49] [Sound Library Loader/INFO]: Sound engine started
+[23:02:50] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[23:02:50] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[23:02:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[23:02:53] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[23:02:53] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[23:02:54] [Sound Library Loader/INFO]: Sound engine started
+[23:04:57] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[23:04:57] [Server thread/INFO]: Generating keypair
+[23:04:57] [Server thread/INFO]: Preparing start region for level 0
+[23:04:58] [Server thread/INFO]: Changing view distance to 16, from 10
+[23:04:59] [Server thread/INFO]: Player343[local:E:0edf8680] logged in with entity id 250 at (185.50973433177788, 65.4807108763317, 224.84588894332387)
+[23:04:59] [Server thread/INFO]: Player343 joined the game
+[23:05:00] [Server thread/INFO]: Saving and pausing game...
+[23:05:00] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:05:00] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:05:00] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:05:06] [Server thread/INFO]: Player343 has just earned the achievement [Taking Inventory]
+[23:05:06] [Client thread/INFO]: [CHAT] Player343 has just earned the achievement [Taking Inventory]
+[23:06:07] [Server thread/INFO]: [Player343: Set own game mode to Creative Mode]
+[23:06:07] [Client thread/INFO]: [CHAT] Your game mode has been updated

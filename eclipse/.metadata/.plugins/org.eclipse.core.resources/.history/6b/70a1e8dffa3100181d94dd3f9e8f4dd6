@@ -1,0 +1,14 @@
+package com.flippity.ei.common.tiles.base.fluid;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TEAcid extends TileEntity{
+	int i = 0;
+	@Override
+	public void updateEntity(){
+		i++;
+		if(i == 20) {
+			System.out.println("test");
+		}
+	}
+}

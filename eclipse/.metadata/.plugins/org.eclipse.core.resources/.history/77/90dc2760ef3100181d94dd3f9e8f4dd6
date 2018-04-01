@@ -1,0 +1,5 @@
+package com.flippity.ei.common.blocks.base.fluid;
+
+public class BlockFluidContainer {
+
+}

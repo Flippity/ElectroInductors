@@ -1,0 +1,75 @@
+[17:35:27] [main/INFO]: Setting user: Player824
+[17:35:30] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:35:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[17:35:44] [Sound Library Loader/INFO]: Sound engine started
+[17:35:46] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:35:46] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[17:35:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[17:35:49] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[17:35:49] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[17:35:50] [Sound Library Loader/INFO]: Sound engine started
+[17:45:41] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:45:41] [Server thread/INFO]: Generating keypair
+[17:45:41] [Server thread/INFO]: Preparing start region for level 0
+[17:45:42] [Server thread/INFO]: Changing view distance to 8, from 10
+[17:45:43] [Server thread/INFO]: Player824[local:E:5329a05c] logged in with entity id 347 at (133.69999998807907, 68.0, 257.30000001192093)
+[17:45:43] [Server thread/INFO]: Player824 joined the game
+[17:45:44] [Server thread/INFO]: Saving and pausing game...
+[17:45:44] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:45:44] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:45:44] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:46:40] [Server thread/INFO]: Player824 has just earned the achievement [Taking Inventory]
+[17:46:40] [Client thread/INFO]: [CHAT] Player824 has just earned the achievement [Taking Inventory]
+[17:47:15] [Server thread/INFO]: [Player824: Set own game mode to Survival Mode]
+[17:47:15] [Client thr[17:47:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Meka[17:50:19] [Server thread/WARN]: The save is being accessed from another location, aborting
+[17:51:04] [Server thread/WARN]: The save is being accessed from another location, aborting
+[17:51:49] [Server thread/WARN]: The save is being accessed from another location, aborting
+[17:52:34] [Server thread/WARN]: The save is being accessed from another location, aborting
+ing ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[17:47:37] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[17:47:37] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[17:47:38] [Sound Library Loader/INFO]: Sound engine started
+[17:50:10] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:50:10] [Server thread/INFO]: Generating keypair
+[17:50:11] [Server thread/INFO]: Preparing start region for level 0
+[17:50:12] [Server thread/INFO]: Preparing spawn area: 18%
+[17:50:13] [Server thread/INFO]: Changing view distance to 8, from 10
+[17:50:15] [Server thread/INFO]: Player850[local:E:a98805fe] logged in with entity id 356 at (133.5308044600722, 70.83005654298584, 258.31194084466836)
+[17:50:15] [Server thread/INFO]: Player850 joined the game
+[17:50:20] [Server thread/INFO]: Player850 has ju[17:50:21] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:50:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forg[17:51:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 136 ms
+[17:51:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 117 ms
+[17:51:28] [Client thread/INFO]: Stopping!
+[17:51:28] [Server thread/INFO]: Stopping server
+[17:51:28] [Server thread/INFO]: Saving players
+[17:51:28] [Server thread/INFO]: Saving worlds
+[17:51:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:51:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:51:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:51:28] [Client Shutdown Thread/INFO]: Stopping server
+[17:51:28] [Client Shutdown Thread/INFO]: Saving players
+eResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[17:50:58] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[17:50:58] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[17:50:59] [Sound Library Loader/INFO]: Sound engine started
+[17:51:31] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:51:31] [Server thread/INFO]: Generating keypair
+[17:51:31] [Server thread/INFO]: Preparing start region for level 0
+[17:51:32] [Server thread/INFO]: Preparing spawn area: 91%
+[17:51:32] [Server thread/INFO]: Changing view distance to 8, from 10
+[17:51:33] [Server thread/INFO]: Player585[local:E:407a394c] logged in with entity id 269 at (124.88381686701926, 67.0, 256.3000000119208)
+[17:51:33] [Server thread/INFO]: Player585 joined the game
+[17:51:34] [Server thread/INFO]: Saving and pausing game...
+[17:51:34] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:51:34] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:51:34] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:51:59] [Server thread/INFO]: Player585 has just earned the achievement [Taking Inventory]
+[17:51:59] [Client thread/INFO]: [CHAT] Player585 has just earned the achievement [Taking Inventory]
+[17:52:51] [Client thread/INFO]: Stopping!
+[17:52:51] [Server thread/INFO]: Stopping server
+[17:52:51] [Server thread/INFO]: Saving players
+[17:52:51] [Server thread/INFO]: Saving worlds
+[17:52:51] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:52:51] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:52:51] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:52:52] [Client Shutdown Thread/INFO]: Stopping server

@@ -1,0 +1,21 @@
+package com.flippity.ei.common.blocks.atomic;
+
+import com.flippity.ei.common.tiles.atomic.TECentrifuge;
+
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+
+public class BlockCentrifuge extends BlockContainer{
+
+	public BlockCentrifuge() {
+		super(Material.iron);
+	}
+
+	@Override
+	public TileEntity createNewTileEntity(World world, int x) {
+		return new TECentrifuge();
+	}
+
+}

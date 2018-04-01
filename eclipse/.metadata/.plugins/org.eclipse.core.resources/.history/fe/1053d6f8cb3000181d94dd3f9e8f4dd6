@@ -1,0 +1,148 @@
+package com.flippity.ei.common.blocks;
+
+import com.flippity.ei.common.blocks.atomic.BlockElectromagnet;
+import com.flippity.ei.common.blocks.atomic.BlockElectromagnetGlass;
+import com.flippity.ei.common.blocks.atomic.BlockPlasma;
+import com.flippity.ei.common.blocks.atomic.BlockTurbine;
+import com.flippity.ei.common.blocks.atomic.OreUranium;
+import com.flippity.ei.common.blocks.base.batteries.BlockT1Battery;
+import com.flippity.ei.common.blocks.base.cables.copper.BlockCableCopperInsulated;
+import com.flippity.ei.common.blocks.base.cables.copper.BlockCableCopperUninsulated;
+import com.flippity.ei.common.blocks.base.cables.superconductor.BlockCableSuperconductorInsulated;
+import com.flippity.ei.common.blocks.base.cables.superconductor.BlockCableSuperconductorUninsulated;
+import com.flippity.ei.common.blocks.base.farm.BlockGuayule;
+import com.flippity.ei.common.blocks.base.machines.BlockBoreDrillCrank;
+import com.flippity.ei.common.blocks.base.machines.BlockCoalGenerator;
+import com.flippity.ei.common.blocks.base.metals.aluminum.BlockAluminum;
+import com.flippity.ei.common.blocks.base.metals.aluminum.OreAluminum;
+import com.flippity.ei.common.blocks.base.metals.copper.BlockCopper;
+import com.flippity.ei.common.blocks.base.metals.copper.OreCopper;
+import com.flippity.ei.common.blocks.base.metals.lead.BlockLead;
+import com.flippity.ei.common.blocks.base.metals.lead.OreLead;
+import com.flippity.ei.common.constants.GeneratorConstants;
+import com.flippity.ei.common.items.atomic.ItemBlockElectromagnet;
+import com.flippity.ei.common.items.atomic.ItemBlockPlasma;
+import com.flippity.ei.common.items.base.blocks.battery.ItemBlockT1Battery;
+import com.flippity.ei.common.items.base.blocks.cables.copper.ItemBlockCableCopperInsulated;
+import com.flippity.ei.common.items.base.blocks.cables.copper.ItemBlockCableCopperUninsulated;
+import com.flippity.ei.common.items.base.blocks.cables.superconductor.ItemBlockCableSuperconductorInsulated;
+import com.flippity.ei.common.items.base.blocks.cables.superconductor.ItemBlockCableSuperconductorUninsulated;
+import com.flippity.ei.common.items.base.blocks.metals.aluminum.ItemBlockAluminum;
+import com.flippity.ei.common.items.base.blocks.metals.aluminum.ItemOreAluminum;
+import com.flippity.ei.common.items.base.blocks.metals.copper.ItemBlockCopper;
+import com.flippity.ei.common.items.base.blocks.metals.copper.ItemOreCopper;
+import com.flippity.ei.common.items.base.blocks.metals.lead.ItemBlockLead;
+import com.flippity.ei.common.items.base.blocks.metals.lead.ItemOreLead;
+
+//import com.flippity.ei.common.blocks.base.cables.superconductor.BlockCableSuperconductorUninsulated;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+
+public class BlockRegistry {
+	
+	//base
+		//copper
+	public static Block blockCableCopperUninsulated;
+	public static Block blockCableCopperInsulated;
+		//superconductor
+	public static Block blockCableSuperconductorUninsulated;
+	public static Block blockCableSuperconductorInsulated;
+		//guayule
+	public static Block blockGuayule;
+		//batteries
+	public static Block blockT1Battery;
+		//bore drills
+	public static Block blockBoreDrillCrank;
+		//coal generator
+	public static Block blockCoalGenerator;
+		//metals
+	public static Block blockAluminum;
+	public static Block oreAluminum;
+	public static Block blockCopper;
+	public static Block oreCopper;
+	public static Block blockBronze;
+	public static Block blockPlatinum;
+	public static Block orePlatinum;
+	public static Block blockSilver;
+	public static Block oreSilver;
+	public static Block blockLead;
+	public static Block oreLead;
+	public static Block blockTin;
+	public static Block oreTin;
+	public static Block blockZinc;
+	public static Block oreZinc;
+
+	//atomic
+		//electromagnet
+	public static Block blockElectromagnet;
+	public static Block blockElectromagnetGlass;
+		//plasma
+	public static Block blockPlasma;
+		//turbine
+	public static Block blockTurbine;
+		//uranium ore
+	public static Block oreUranium;
+	
+		
+		//test
+	public static Block blockTest;
+	public static void initBlocks() {
+		
+		//base
+			//cable
+				//copper
+		blockCableCopperUninsulated = new BlockCableCopperUninsulated();
+		GameRegistry.registerBlock(blockCableCopperUninsulated, ItemBlockCableCopperUninsulated.class, "blockCableCopperUninsulated");
+		blockCableCopperInsulated = new BlockCableCopperInsulated();
+		GameRegistry.registerBlock(blockCableCopperInsulated, ItemBlockCableCopperInsulated.class, "blockCableCopperInsulated");
+				//superconductor
+		blockCableSuperconductorUninsulated = new BlockCableSuperconductorUninsulated();
+		GameRegistry.registerBlock(blockCableSuperconductorUninsulated, ItemBlockCableSuperconductorUninsulated.class, "blockCableSuperconductorUninsulated");
+		blockCableSuperconductorInsulated = new BlockCableSuperconductorInsulated();
+		GameRegistry.registerBlock(blockCableSuperconductorInsulated, ItemBlockCableSuperconductorInsulated.class, "blockCableSuperconductorInsulated");
+			//machines
+				//bore drills
+		/*blockBoreDrillCrank = new BlockBoreDrillCrank();
+		GameRegistry.registerBlock(blockBoreDrillCrank, "blockBoreDrillCrank");*/
+				//coal generator
+		/*blockCoalGenerator = new BlockCoalGenerator();
+		GameRegistry.registerBlock(blockCoalGenerator, "blockCoalGenerator");*/
+			//metals
+		blockAluminum = new BlockAluminum();
+		GameRegistry.registerBlock(blockAluminum, ItemBlockAluminum.class, "blockAluminum");
+		oreAluminum = new OreAluminum();
+		GameRegistry.registerBlock(oreAluminum, ItemOreAluminum.class, "oreAluminum");
+		blockCopper = new BlockCopper();
+		GameRegistry.registerBlock(blockCopper, ItemBlockCopper.class, "blockCopper");
+		oreCopper = new OreCopper();
+		GameRegistry.registerBlock(oreCopper, ItemOreCopper.class, "oreCopper");
+		blockLead = new BlockLead();
+		GameRegistry.registerBlock(blockLead, ItemBlockLead.class, "blockLead");
+		oreLead = new OreLead();
+		GameRegistry.registerBlock(oreLead, ItemOreLead.class, "oreLead");
+			//batteries
+		/*blockT1Battery = new BlockT1Battery();
+		GameRegistry.registerBlock(blockT1Battery, ItemBlockT1Battery.class, "blockT1Battery");*/
+			//farm
+		blockGuayule = new BlockGuayule();
+		GameRegistry.registerBlock(blockGuayule, "blockGuayule");
+		
+		
+		//atomic
+			//electromagnet
+		blockElectromagnet = new BlockElectromagnet();
+		GameRegistry.registerBlock(blockElectromagnet, ItemBlockElectromagnet.class, "blockElectromagnet");	
+		blockElectromagnetGlass = new BlockElectromagnetGlass();
+		GameRegistry.registerBlock(blockElectromagnetGlass, ItemBlockElectromagnet.class, "blockElectromagnetGlass");	
+			//plasma
+		blockPlasma = new BlockPlasma();
+		GameRegistry.registerBlock(blockPlasma, ItemBlockPlasma.class, "blockPlasma");	
+			//turbine
+		blockTurbine = new BlockTurbine();
+		GameRegistry.registerBlock(blockTurbine, ItemBlockPlasma.class, "blockTurbine");	
+			//ore
+		oreUranium = new OreUranium();
+		GameRegistry.registerBlock(oreUranium, "oreUranium");
+	}
+}

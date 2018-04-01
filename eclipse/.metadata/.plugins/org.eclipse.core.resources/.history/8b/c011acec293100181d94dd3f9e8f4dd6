@@ -1,0 +1,24 @@
+package com.flippity.ei.common.items.base.fluid;
+
+import com.flippity.ei.common.blocks.FluidsRegistry;
+
+import net.minecraft.block.Block;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBucket;
+
+public class ItemBucketAcid extends ItemBucket {
+
+public ItemBucketAcid(Block block) {
+
+super(FluidsRegistry.blockAcid);
+
+        this.setContainerItem(Items.bucket);
+
+        this.maxStackSize = 1;
+
+}
+
+ 
+
+}

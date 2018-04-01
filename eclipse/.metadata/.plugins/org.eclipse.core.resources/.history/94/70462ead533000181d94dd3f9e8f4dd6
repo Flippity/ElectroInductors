@@ -1,0 +1,26 @@
+package com.flippity.ei.common.items.base.blocks.metals.aluminum;
+
+import java.util.List;
+
+import net.minecraft.block.Block;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+
+public class ItemBlockAluminum extends ItemBlock{
+
+	public ItemBlockAluminum(Block block) {
+		super(block);
+	}
+
+	@Override
+	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean par3) {
+        if(GuiScreen.isShiftKeyDown()){
+            list.add("§cA chunk of a silvery-white and soft metal.§r");
+        }else{
+            list.add("§fPress§ §ashift§r §ffor description§");
+        }
+    }
+	
+}

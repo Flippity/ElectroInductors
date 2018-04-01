@@ -1,0 +1,138 @@
+---- Minecraft Crash Report ----
+// I feel sad now :(
+
+Time: 3/24/18 10:59 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at net.minecraft.item.ItemStack.isItemEqual(ItemStack.java:444)
+	at net.minecraft.entity.player.InventoryPlayer.hasItemStack(InventoryPlayer.java:801)
+	at com.flippity.ei.client.handler.HazmatHandler.handlePotionEffect(HazmatHandler.java:24)
+	at com.flippity.ei.common.blocks.atomic.OreUranium.onEntityWalking(OreUranium.java:27)
+	at net.minecraft.entity.Entity.moveEntity(Entity.java:889)
+	at net.minecraft.entity.EntityLivingBase.moveEntityWithHeading(EntityLivingBase.java:1680)
+	at net.minecraft.entity.player.EntityPlayer.moveEntityWithHeading(EntityPlayer.java:1862)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2023)
+	at net.minecraft.entity.player.EntityPlayer.onLivingUpdate(EntityPlayer.java:612)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:299)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:1816)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:327)
+	at net.minecraft.client.entity.EntityClientPlayerMP.onUpdate(EntityClientPlayerMP.java:96)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2298)
+	at net.minecraft.world.World.updateEntity(World.java:2258)
+	at net.minecraft.world.World.updateEntities(World.java:2108)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2097)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.item.ItemStack.isItemEqual(ItemStack.java:444)
+	at net.minecraft.entity.player.InventoryPlayer.hasItemStack(InventoryPlayer.java:801)
+	at com.flippity.ei.client.handler.HazmatHandler.handlePotionEffect(HazmatHandler.java:24)
+	at com.flippity.ei.common.blocks.atomic.OreUranium.onEntityWalking(OreUranium.java:27)
+	at net.minecraft.entity.Entity.moveEntity(Entity.java:889)
+	at net.minecraft.entity.EntityLivingBase.moveEntityWithHeading(EntityLivingBase.java:1680)
+	at net.minecraft.entity.player.EntityPlayer.moveEntityWithHeading(EntityPlayer.java:1862)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2023)
+	at net.minecraft.entity.player.EntityPlayer.onLivingUpdate(EntityPlayer.java:612)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:299)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:1816)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:327)
+	at net.minecraft.client.entity.EntityClientPlayerMP.onUpdate(EntityClientPlayerMP.java:96)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2298)
+	at net.minecraft.world.World.updateEntity(World.java:2258)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityClientPlayerMP)
+	Entity ID: 247
+	Entity Name: Player83
+	Entity's Exact location: 185.62, 66.72, 224.80
+	Entity's Block location: World: (185,66,224), Chunk: (at 9,4,0 in 11,14; contains blocks 176,0,224 to 191,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.11, -0.38, -0.05
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2108)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player83'/247, l='MpServer', x=185.62, y=66.72, z=224.80]]
+	Chunk stats: MultiplayerChunkCache: 1029, 1029
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (212,64,240), Chunk: (at 4,4,0 in 13,15; contains blocks 208,0,240 to 223,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 34575 game time, 34575 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 62 total; [EntityCow['Cow'/142, l='MpServer', x=219.19, y=68.00, z=215.22], EntityCow['Cow'/143, l='MpServer', x=213.06, y=67.00, z=246.03], EntityCow['Cow'/151, l='MpServer', x=225.50, y=67.00, z=229.31], EntityBat['Bat'/667, l='MpServer', x=168.75, y=30.10, z=184.25], EntityBat['Bat'/668, l='MpServer', x=173.66, y=30.01, z=188.49], EntitySheep['Sheep'/158, l='MpServer', x=251.28, y=73.00, z=263.22], EntitySheep['Sheep'/161, l='MpServer', x=259.50, y=73.00, z=271.50], EntitySheep['Sheep'/162, l='MpServer', x=262.63, y=73.00, z=263.53], EntityBat['Bat'/677, l='MpServer', x=176.92, y=31.87, z=157.35], EntityBat['Bat'/53, l='MpServer', x=105.25, y=19.10, z=213.41], EntityPig['Pig'/60, l='MpServer', x=115.75, y=67.00, z=186.09], EntityPig['Pig'/61, l='MpServer', x=124.56, y=65.00, z=179.84], EntityCow['Cow'/62, l='MpServer', x=118.06, y=70.00, z=221.16], EntityVillager['Villager'/63, l='MpServer', x=123.46, y=69.00, z=230.72], EntityCow['Cow'/64, l='MpServer', x=124.25, y=63.00, z=241.53], EntityPig['Pig'/68, l='MpServer', x=133.13, y=64.00, z=177.16], EntityVillager['Villager'/69, l='MpServer', x=132.72, y=66.00, z=216.34], EntityVillager['Villager'/70, l='MpServer', x=143.31, y=65.00, z=215.69], EntityVillager['Villager'/71, l='MpServer', x=135.31, y=67.00, z=218.06], EntityVillager['Villager'/72, l='MpServer', x=128.94, y=69.00, z=216.94], EntityVillager['Villager'/73, l='MpServer', x=133.28, y=69.00, z=220.16], EntityVillager['Villager'/74, l='MpServer', x=143.31, y=65.00, z=214.31], EntityVillager['Villager'/75, l='MpServer', x=135.41, y=68.00, z=223.59], EntityVillager['Villager'/76, l='MpServer', x=137.41, y=67.00, z=222.72], EntityVillager['Villager'/77, l='MpServer', x=137.50, y=69.00, z=230.06], EntityVillager['Villager'/78, l='MpServer', x=132.75, y=64.00, z=229.41], EntityVillager['Villager'/79, l='MpServer', x=123.50, y=69.00, z=231.33], EntityCow['Cow'/80, l='MpServer', x=143.19, y=71.00, z=251.50], EntityCow['Cow'/81, l='MpServer', x=141.09, y=63.00, z=263.94], EntityCow['Cow'/82, l='MpServer', x=130.75, y=63.00, z=261.44], EntityPig['Pig'/83, l='MpServer', x=144.16, y=73.00, z=269.03], EntityCow['Cow'/84, l='MpServer', x=128.38, y=65.00, z=263.44], EntityPig['Pig'/85, l='MpServer', x=130.75, y=69.00, z=276.31], EntityBat['Bat'/94, l='MpServer', x=157.31, y=13.10, z=155.66], EntityBat['Bat'/95, l='MpServer', x=151.00, y=14.00, z=158.63], EntityPig['Pig'/96, l='MpServer', x=159.81, y=73.00, z=152.16], EntityPig['Pig'/97, l='MpServer', x=137.94, y=88.00, z=149.03], EntityPig['Pig'/98, l='MpServer', x=147.94, y=65.00, z=175.13], EntityPig['Pig'/99, l='MpServer', x=147.34, y=64.00, z=172.47], EntityPig['Pig'/100, l='MpServer', x=144.03, y=64.00, z=188.13], EntityCow['Cow'/101, l='MpServer', x=153.13, y=64.00, z=207.97], EntityVillager['Villager'/102, l='MpServer', x=144.72, y=65.00, z=214.31], EntityVillager['Villager'/103, l='MpServer', x=143.31, y=65.00, z=215.03], EntityVillager['Villager'/104, l='MpServer', x=144.94, y=67.00, z=229.53], EntityVillager['Villager'/105, l='MpServer', x=144.31, y=66.00, z=234.66], EntityBat['Bat'/106, l='MpServer', x=129.59, y=29.14, z=238.28], EntityBat['Bat'/107, l='MpServer', x=161.31, y=31.26, z=273.94], EntityCow['Cow'/108, l='MpServer', x=150.09, y=64.00, z=258.97], EntityPig['Pig'/109, l='MpServer', x=146.13, y=72.00, z=277.88], EntityPig['Pig'/110, l='MpServer', x=140.53, y=67.00, z=269.50], EntitySheep['Sheep'/114, l='MpServer', x=163.53, y=63.00, z=190.22], EntityCow['Cow'/115, l='MpServer', x=162.28, y=63.00, z=194.25], EntityVillager['Villager'/116, l='MpServer', x=173.77, y=65.00, z=202.53], EntityCow['Cow'/117, l='MpServer', x=168.31, y=64.00, z=253.69], EntityCow['Cow'/118, l='MpServer', x=171.69, y=73.00, z=283.72], EntityCow['Cow'/119, l='MpServer', x=163.84, y=74.00, z=295.03], EntityClientPlayerMP['Player83'/247, l='MpServer', x=185.62, y=66.72, z=224.80], EntityCow['Cow'/120, l='MpServer', x=169.16, y=75.00, z=304.03], EntityVillager['Villager'/123, l='MpServer', x=180.66, y=65.00, z=202.31], EntityCow['Cow'/124, l='MpServer', x=177.84, y=73.00, z=286.91], EntityBat['Bat'/125, l='MpServer', x=195.50, y=26.92, z=153.41], EntityBat['Bat'/126, l='MpServer', x=190.06, y=22.10, z=153.06]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_144, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 693537192 bytes (661 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 15, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 9 mods loaded, 9 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	CodeChickenCore{1.0.7.47} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAA	ForgeMultipart{1.1.2.331} [Forge Multipart] (ForgeMultipart-1.7.10-1.1.2.331-dev.jar) 
+	UCHIJAAAA	ei{1.0.0.01} [ElectroInductors] (bin) 
+	UCHIJAAAA	Mekanism{9.1.0} [Mekanism] (Mekanism-1.7.10-9.1.0.281 (1).jar) 
+	UCHIJAAAA	McMultipart{1.1.2.331} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.1.2.331-dev.jar) 
+	UCHIJAAAA	ForgeMicroblock{1.1.2.331} [Forge Microblocks] (ForgeMultipart-1.7.10-1.1.2.331-dev.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.43' Renderer: 'GeForce GTX 1050 Ti/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 1050 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.43, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

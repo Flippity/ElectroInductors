@@ -1,0 +1,5 @@
+package com.flippity.ei.client.gui;
+
+public class GUITestContainer {
+
+}

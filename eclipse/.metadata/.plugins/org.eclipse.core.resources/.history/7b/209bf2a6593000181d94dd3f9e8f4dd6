@@ -1,0 +1,17 @@
+package com.flippity.ei.client.world.worldgen;
+
+import com.flippity.ei.client.world.worldgen.ore.AluminumGen;
+import com.flippity.ei.client.world.worldgen.ore.CopperGen;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+
+public class GenRegistry {
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		GameRegistry.registerWorldGenerator(new AluminumGen(), 0);
+		GameRegistry.registerWorldGenerator(new CopperGen(), 0);
+	}
+}

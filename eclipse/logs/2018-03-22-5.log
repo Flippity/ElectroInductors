@@ -1,0 +1,22 @@
+[16:46:47] [main/INFO]: Setting user: Player913
+[16:46:49] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:47:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[16:47:06] [Sound Library Loader/INFO]: Sound engine started
+[16:47:07] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[16:47:07] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[16:47:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[16:47:10] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[16:47:11] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[16:47:11] [Sound Library Loader/INFO]: Sound engine started
+[16:47:24] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:47:24] [Server thread/INFO]: Generating keypair
+[16:47:24] [Server thread/INFO]: Preparing start region for level 0
+[16:47:25] [Server thread/INFO]: Changing view distance to 16, from 10
+[16:47:26] [Server thread/INFO]: Player913[local:E:f50487ea] logged in with entity id 194 at (16.156283425929047, 67.0, 139.8389869704414)
+[16:47:26] [Server thread/INFO]: Player913 joined the game
+[16:47:27] [Server thread/INFO]: Saving and pausing game...
+[16:47:27] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:47:27] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:47:27] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:47:36] [Server thread/INFO]: Player913 has just earned the achievement [Taking Inventory]
+[16:47:36] [Client thread/INFO]: [CHAT] Player913 has just earned the achievement [Taking Inventory]

@@ -1,0 +1,11 @@
+package efa.api.vanillaoverride.dropoverride;
+
+import net.minecraftforge.common.MinecraftForge;
+
+public class DropOverrides {
+
+	public static void Override() {
+		MinecraftForge.EVENT_BUS.register(new WheatOverride());
+	}
+	
+}

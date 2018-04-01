@@ -1,0 +1,102 @@
+---- Minecraft Crash Report ----
+// I blame Dinnerbone.
+
+Time: 2/18/18 1:23 AM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.flippity.ei.common.blocks.base.wood.BlockLogRubber.onBlockActivated(BlockLogRubber.java:52)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:376)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1529)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2044)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.flippity.ei.common.blocks.base.wood.BlockLogRubber.onBlockActivated(BlockLogRubber.java:52)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:376)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1529)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player90'/232, l='MpServer', x=-178.23, y=73.62, z=-76.62]]
+	Chunk stats: MultiplayerChunkCache: 1081, 1081
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-244,64,252), Chunk: (at 12,4,12 in -16,15; contains blocks -256,0,240 to -241,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 171877 game time, 55604 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 38 total; [EntityHorse['Horse'/256, l='MpServer', x=-244.97, y=63.00, z=-47.19], EntityItem['item.item.leather'/257, l='MpServer', x=-234.81, y=68.13, z=-42.50], EntityChicken['Chicken'/258, l='MpServer', x=-229.53, y=63.00, z=-101.59], EntityChicken['Chicken'/259, l='MpServer', x=-226.50, y=63.00, z=-109.50], EntityChicken['Chicken'/260, l='MpServer', x=-233.03, y=63.00, z=-100.59], EntitySheep['Sheep'/261, l='MpServer', x=-209.34, y=71.00, z=-113.50], EntityCow['Cow'/262, l='MpServer', x=-189.47, y=75.00, z=-131.47], EntityCow['Cow'/263, l='MpServer', x=-190.63, y=75.00, z=-131.91], EntitySquid['Squid'/265, l='MpServer', x=-120.66, y=49.38, z=-76.28], EntityBat['Bat'/1947, l='MpServer', x=-235.88, y=40.42, z=-56.94], EntityBat['Bat'/1948, l='MpServer', x=-232.47, y=41.20, z=-55.34], EntityBat['Bat'/1952, l='MpServer', x=-230.38, y=42.00, z=-49.88], EntityBat['Bat'/1442, l='MpServer', x=-178.25, y=21.00, z=0.28], EntityWolf['Wolf'/298, l='MpServer', x=-241.69, y=69.00, z=-157.59], EntityBat['Bat'/1834, l='MpServer', x=-169.26, y=30.93, z=-107.91], EntityBat['Bat'/1835, l='MpServer', x=-172.46, y=30.54, z=-105.90], EntityBat['Bat'/1837, l='MpServer', x=-187.73, y=23.10, z=-80.45], EntityBat['Bat'/1590, l='MpServer', x=-154.25, y=24.10, z=-18.25], EntityBat['Bat'/1856, l='MpServer', x=-147.29, y=35.00, z=-67.25], EntityBat['Bat'/2022, l='MpServer', x=-209.47, y=37.21, z=-116.26], EntityBat['Bat'/2023, l='MpServer', x=-206.44, y=41.26, z=-120.92], EntityClientPlayerMP['Player90'/232, l='MpServer', x=-178.23, y=73.62, z=-76.62], EntityHorse['Horse'/234, l='MpServer', x=-208.84, y=64.00, z=-83.63], EntityHorse['Horse'/235, l='MpServer', x=-210.03, y=66.00, z=-98.00], EntityHorse['Horse'/236, l='MpServer', x=-207.91, y=64.00, z=-85.34], EntityChicken['Chicken'/238, l='MpServer', x=-179.78, y=75.00, z=-35.31], EntityHorse['Horse'/239, l='MpServer', x=-211.91, y=63.00, z=-83.91], EntitySheep['Sheep'/240, l='MpServer', x=-211.94, y=65.00, z=-100.84], EntitySheep['Sheep'/241, l='MpServer', x=-204.94, y=70.00, z=-102.84], EntitySheep['Sheep'/242, l='MpServer', x=-212.50, y=66.00, z=-109.47], EntityHorse['Horse'/243, l='MpServer', x=-210.44, y=66.00, z=-103.56], EntityChicken['Chicken'/244, l='MpServer', x=-217.41, y=64.00, z=-100.63], EntityHorse['Horse'/245, l='MpServer', x=-208.03, y=69.00, z=-99.09], EntityBat['Bat'/246, l='MpServer', x=-150.25, y=12.10, z=-97.72], EntityCow['Cow'/252, l='MpServer', x=-200.16, y=76.00, z=-127.75], EntityCow['Cow'/253, l='MpServer', x=-194.50, y=75.00, z=-123.50], EntityChicken['Chicken'/254, l='MpServer', x=-173.59, y=77.00, z=-25.34], EntityChicken['Chicken'/255, l='MpServer', x=-167.44, y=78.00, z=-30.47]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:991)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_144, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 592604216 bytes (565 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 9 mods loaded, 9 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	CodeChickenCore{1.0.7.47} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAA	ForgeMultipart{1.1.2.331} [Forge Multipart] (ForgeMultipart-1.7.10-1.1.2.331-dev.jar) 
+	UCHIJAAAA	ei{1.0.0.01} [ElectroInductors] (bin) 
+	UCHIJAAAA	Mekanism{9.1.0} [Mekanism] (Mekanism-1.7.10-9.1.0.281 (1).jar) 
+	UCHIJAAAA	McMultipart{1.1.2.331} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.1.2.331-dev.jar) 
+	UCHIJAAAA	ForgeMicroblock{1.1.2.331} [Forge Microblocks] (ForgeMultipart-1.7.10-1.1.2.331-dev.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.43' Renderer: 'GeForce GTX 1050 Ti/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 1050 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.43, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

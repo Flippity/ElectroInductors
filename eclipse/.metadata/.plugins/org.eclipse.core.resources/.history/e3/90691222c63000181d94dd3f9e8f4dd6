@@ -1,0 +1,107 @@
+package com.flippity.ei.common.items;
+
+import com.flippity.ei.common.items.atomic.ItemAntidote;
+import com.flippity.ei.common.items.atomic.metals.ItemPuckUranium235;
+import com.flippity.ei.common.items.base.farm.ItemSeedGuayule;
+import com.flippity.ei.common.items.base.metals.aluminum.ItemDustAluminum;
+import com.flippity.ei.common.items.base.metals.aluminum.ItemIngotAluminum;
+import com.flippity.ei.common.items.base.metals.aluminum.ItemPipeAluminum;
+import com.flippity.ei.common.items.base.metals.aluminum.ItemPlateAluminum;
+import com.flippity.ei.common.items.base.metals.aluminum.ItemRodAluminum;
+import com.flippity.ei.common.items.base.metals.copper.ItemDustCopper;
+import com.flippity.ei.common.items.base.metals.copper.ItemIngotCopper;
+import com.flippity.ei.common.items.base.metals.copper.ItemPipeCopper;
+import com.flippity.ei.common.items.base.metals.copper.ItemPlateCopper;
+import com.flippity.ei.common.items.base.metals.copper.ItemRodCopper;
+import com.flippity.ei.common.items.base.metals.lead.ItemDustLead;
+import com.flippity.ei.common.items.base.metals.lead.ItemIngotLead;
+import com.flippity.ei.common.items.base.metals.lead.ItemPipeLead;
+import com.flippity.ei.common.items.base.metals.lead.ItemPlateLead;
+import com.flippity.ei.common.items.base.metals.lead.ItemRodLead;
+import com.flippity.ei.common.items.base.rubber.ItemRubber;
+import com.flippity.ei.common.items.base.rubber.ItemRubberRaw;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
+
+public class ItemRegistry {
+	public static Item antidote;
+	public static Item puckU235;
+	
+	public static Item guayuleSeeds;
+	public static Item rubberRaw;
+	public static Item rubber;
+
+	//base
+		//metals
+			//aluminum
+	public static Item aluminumDust;
+	public static Item aluminumIngot;
+	public static Item aluminumPipe;
+	public static Item aluminumPlate;
+	public static Item aluminumRod;
+			//copper
+	public static Item copperDust;
+	public static Item copperIngot;
+	public static Item copperPipe;
+	public static Item copperPlate;
+	public static Item copperRod;
+			//lead
+	public static Item leadDust;
+	public static Item leadIngot;
+	public static Item leadPipe;
+	public static Item leadPlate;
+	public static Item leadRod;
+	
+	
+	public static void initItems() {
+	//atomic
+		antidote = new ItemAntidote(null, 0, 0, false);
+		GameRegistry.registerItem(antidote, "antidote");
+		puckU235 = new ItemPuckUranium235();
+		GameRegistry.registerItem(puckU235, "puckU235");
+		
+	//base
+		//organic
+		guayuleSeeds = new ItemSeedGuayule(null, null);
+		GameRegistry.registerItem(guayuleSeeds, "guayuleSeeds");
+		rubberRaw = new ItemRubberRaw();
+		GameRegistry.registerItem(rubberRaw, "rubberRaw");
+		rubber = new ItemRubber();
+		GameRegistry.registerItem(rubber, "rubber");
+		//metals
+			//aluminum
+		aluminumDust = new ItemDustAluminum();
+		GameRegistry.registerItem(aluminumDust, "dustAluminum");
+		aluminumIngot = new ItemIngotAluminum();
+		GameRegistry.registerItem(aluminumIngot, "ingotAluminum");
+		aluminumPipe = new ItemPipeAluminum();
+		GameRegistry.registerItem(aluminumPipe, "pipeAluminum");
+		aluminumPlate = new ItemPlateAluminum();
+		GameRegistry.registerItem(aluminumPlate, "plateAluminum");
+		aluminumRod = new ItemRodAluminum();
+		GameRegistry.registerItem(aluminumRod, "rodAluminum");
+		
+		copperDust = new ItemDustCopper();
+		GameRegistry.registerItem(copperDust, "dustCopper");
+		copperIngot = new ItemIngotCopper();
+		GameRegistry.registerItem(copperIngot, "ingotCopper");
+		copperPipe = new ItemPipeCopper();
+		GameRegistry.registerItem(copperPipe, "pipeCopper");
+		copperPlate = new ItemPlateCopper();
+		GameRegistry.registerItem(copperPlate, "plateCopper");
+		copperRod = new ItemRodCopper();
+		GameRegistry.registerItem(copperRod, "rodCopper");
+		
+		leadDust = new ItemDustLead();
+		GameRegistry.registerItem(leadDust, "dustLead");
+		leadIngot = new ItemIngotLead();
+		GameRegistry.registerItem(leadIngot, "ingotLead");
+		leadPipe = new ItemPipeLead();
+		GameRegistry.registerItem(leadPipe, "pipeLead");
+		leadPlate = new ItemPlateLead();
+		GameRegistry.registerItem(leadPlate, "plateLead");
+		leadRod = new ItemRodLead();
+		GameRegistry.registerItem(leadRod, "rodLead");
+	}
+}

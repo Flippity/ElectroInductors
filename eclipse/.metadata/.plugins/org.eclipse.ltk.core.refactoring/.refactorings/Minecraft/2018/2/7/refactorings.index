@@ -24,3 +24,54 @@
 1518754171517	Rename resource 'electricalCopperCableTexture.png'
 1518792620065	Rename resource 'BlockCableCopper.png'
 1518792923551	Rename resource 'MISSING_ICON_BLOCK_165_BlockCableCopper.png'
+1518807464450	Delete element
+1518807502358	Delete element
+1518807521423	Move compilation units
+1518807565235	Rename type 'radiationFixation'
+1518807572842	Rename type 'RadiationEffect'
+1518807593848	Rename type 'PotionEvent'
+1518807596534	Move compilation unit
+1518808936216	Delete element
+1518808978844	Delete element
+1518809676925	Delete element
+1518809728121	Delete element
+1518809747119	Delete element
+1518809877328	Rename type 'antidote'
+1518809886282	Rename type 'hazmatArmor'
+1518809914986	Move compilation unit
+1518820671612	Move compilation unit
+1518821501400	Move files
+1518821504484	Delete element
+1518823425607	Delete element
+1518823442747	Delete element
+1518823451334	Move compilation unit
+1518823454307	Delete element
+1518823474013	Move compilation unit
+1518823477088	Delete element
+1518823512707	Rename type 'ItemUranium'
+1518823566684	Move compilation unit
+1518845836913	Rename type 'TECableCopper'
+1518847343899	Rename type 'BlockCableCopper'
+1518847604670	Delete element
+1518847631700	Move compilation units
+1518847661981	Move compilation units
+1518847672007	Delete element
+1518848472494	Move compilation units
+1518848480575	Delete element
+1518848485631	Delete element
+1518848489087	Delete element
+1518848992376	Delete element
+1518848996983	Copy compilation units
+1518849259874	Move compilation unit
+1518849452747	Rename type 'RendererCableSuperconductor'
+1518849652466	Rename type 'ItemRendererCableCopper'
+1518849661265	Rename type 'ItemRendererCableSuperconductor'
+1518855334680	Delete element
+1518855353413	Delete element
+1518855379764	Delete elements
+1518855474313	Delete element
+1518895560221	Rename resource 'BlockCableCopper.png'
+1518895716279	Rename resource 'BlockCableSuperConductor.png'
+1518898646909	Rename type 'ItemrendererCableCopperUninsulated'
+1518898708895	Move compilation unit
+1518907639370	Move compilation unit

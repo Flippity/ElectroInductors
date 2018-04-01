@@ -1,0 +1,7 @@
+package com.flippity.ei.common.tiles.atomic;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TECentrifuge extends TileEntity {
+
+}

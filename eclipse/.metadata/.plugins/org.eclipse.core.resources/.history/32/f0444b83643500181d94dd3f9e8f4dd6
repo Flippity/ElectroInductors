@@ -1,0 +1,26 @@
+package com.flippity.ei.common.tiles.atomic;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TECentrifuge extends TileEntity {
+	
+	public static boolean rotate = false;
+	public static int yellowcakeCount = 0;
+	
+	public int i = 0;
+	
+	@Override
+	public void updateEntity() {
+		i++;
+		if(i == 60) {
+			yellowcakeCount--;
+			i = 0;
+		}
+		if(yellowcakeCount > 0) {
+			rotate = true;
+		}else {
+			rotate = false;
+		}
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.flippity.ei.common.tiles.base.cables.copper;
+
+import com.flippity.ei.common.constants.CableConstants;
+import com.flippity.ei.common.tiles.base.cables.TECable;
+
+import cofh.api.energy.EnergyStorage;
+import cofh.api.energy.IEnergyConnection;
+import cofh.api.energy.IEnergyHandler;
+import cofh.api.energy.IEnergyTransport;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
+
+public class TECableCopperInsulated extends TECable implements IEnergyHandler{
+
+	public TECableCopperInsulated() {
+		super(64);
+	}
+
+}

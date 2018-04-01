@@ -1,0 +1,5 @@
+package efa.api.vanillaoverride.dropoverride;
+
+public class Override {
+
+}

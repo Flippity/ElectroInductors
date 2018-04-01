@@ -1,0 +1,63 @@
+package com.flippity.ei.common.items.base.blocks.cables.copper;
+
+import java.util.List;
+
+import com.flippity.ei.reference.Reference;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+
+public class ItemBlockCableCopperInsulated extends ItemBlock{
+
+	public ItemBlockCableCopperInsulated(Block block) {
+		super(block);
+	}
+
+	@Override
+	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean par3) {
+        if(GuiScreen.isShiftKeyDown()){
+        	list.add("Insulated");
+            list.add("Transfers; 64RF/T");
+        }else{
+            list.add("Press shift for info");
+        }
+    }
+	boolean keyShiftDown;
+	boolean keyCTRlDown;
+	
+@Override
+public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean par3) {
+	
+	if(GuiScreen.isShiftKeyDown()) {
+		keyShiftDown = true;
+	}else if(GuiScreen.isShiftKeyDown() == false){
+		keyShiftDown = false;
+	}
+	
+	if(GuiScreen.isCtrlKeyDown()) {
+		keyCTRlDown = true;
+	}else {
+		keyCTRlDown = false;
+	}
+	
+    if(GuiScreen.isShiftKeyDown()){
+        list.add("§cCopper pulled into a wire,§r");
+        list.add("§cand finished with rubber insulation§r");
+    }else if (GuiScreen.isShiftKeyDown() == false && GuiScreen.isCtrlKeyDown() == false){
+        list.add("§fPress§r §ashift§r §ffor description");
+        list.add("§fPress§r §1control§r §ffor materials");
+    }else if (GuiScreen.isCtrlKeyDown()) {
+        if(GuiScreen.isCtrlKeyDown()) {
+        	list.add("§1Crafting§r");
+            list.add("§d1§r x §eCopper Cable");
+            list.add("§d1§r x §eRubber");
+        }
+    }
+}}
+}

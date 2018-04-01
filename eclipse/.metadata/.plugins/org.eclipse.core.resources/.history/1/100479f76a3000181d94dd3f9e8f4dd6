@@ -1,0 +1,31 @@
+package com.flippity.ei.common.tiles;
+
+import com.flippity.ei.common.tiles.atomic.TEElectromagnet;
+import com.flippity.ei.common.tiles.atomic.TEPlasma;
+import com.flippity.ei.common.tiles.atomic.TETurbine;
+import com.flippity.ei.common.tiles.base.batteries.TET1Battery;
+import com.flippity.ei.common.tiles.base.cables.TECable;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperInsulated;
+import com.flippity.ei.common.tiles.base.cables.copper.TECableCopperUninsulated;
+import com.flippity.ei.common.tiles.base.cables.superconductor.TECableSuperconductorInsulated;
+import com.flippity.ei.common.tiles.base.cables.superconductor.TECableSuperconductorUninsulated;
+import com.flippity.ei.common.tiles.base.machines.TEBoreDrillCrank;
+import com.flippity.ei.common.tiles.base.machines.TECoalGenerator;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class TileEntityRegistry {
+	public static void registerTE() {
+		GameRegistry.registerTileEntity(TECableCopperUninsulated.class, "copperCableUninsulated");
+		GameRegistry.registerTileEntity(TECableCopperInsulated.class, "copperCableInsulated");
+		GameRegistry.registerTileEntity(TECableSuperconductorUninsulated.class, "superconductorCableUninsulated");
+		GameRegistry.registerTileEntity(TECableSuperconductorInsulated.class, "superconductorCableInsulated");
+		GameRegistry.registerTileEntity(TEPlasma.class, "plasma");
+		GameRegistry.registerTileEntity(TEElectromagnet.class, "electromagnet");
+		GameRegistry.registerTileEntity(TETurbine.class, "turbine");
+		GameRegistry.registerTileEntity(TEBoreDrillCrank.class, "boreDrillCrank");
+		GameRegistry.registerTileEntity(TECable.class, "cable");
+		GameRegistry.registerTileEntity(TET1Battery.class, "batteryT1");
+		
+	}
+}
