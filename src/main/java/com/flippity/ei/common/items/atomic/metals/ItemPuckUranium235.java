@@ -46,7 +46,7 @@ public class ItemPuckUranium235 extends Item {
 		}
 		
 	    if(GuiScreen.isShiftKeyDown()){
-	        list.add(EnumChatFormatting.RED + "Dense puck of uranium." + EnumChatFormatting.RESET);
+	        list.add(EnumChatFormatting.RED + "Dense puck of uranium 235." + EnumChatFormatting.RESET);
 	        list.add(EnumChatFormatting.RED + "can be used in fission." + EnumChatFormatting.RESET);
 
 	    }else if (GuiScreen.isShiftKeyDown() == false && GuiScreen.isCtrlKeyDown() == false){

@@ -62,15 +62,15 @@ public class BlockAcid extends BlockFluidClassic {
         }     
 
         
-        @Override
+        /*@Override
         @SideOnly(Side.CLIENT)
         public void randomDisplayTick(World w, int x, int y, int z, Random rand) {
         	renderParticle(w, x, y, z);
-        }
+        }*/
         
         
 
-        private void renderParticle(World w, int x, int y, int z) {
+        /*private void renderParticle(World w, int x, int y, int z) {
         	Random random = w.rand;
         	double d0 = 0.0625D;
         	for(int l = 0; l < 6; ++l) {
@@ -88,32 +88,29 @@ public class BlockAcid extends BlockFluidClassic {
         			FMLClientHandler.instance().getClient().effectRenderer.addEffect(fx);
         		}
         	}
-        }
+        }*/
 
         int i = 0;
         @Override
         public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity){
-        	i++;
-            if (world.isRemote) {
+            if (!world.isRemote) {
+            	System.out.println(i);
 	        	if(entity instanceof EntityItem) {
+	            	i++;
 		        	if(((EntityItem) entity).getEntityItem().getItem() == ItemRegistry.blankPCB || ((EntityItem) entity).getEntityItem().getItem() == ItemRegistry.rawPCB) {
 		        		if(((EntityItem) entity).getEntityItem().getItem() == ItemRegistry.rawPCB) {
-		        			if(i == 300) {
+		        			if(i >= 300) {
 		        				entity.setDead();
 		        				entity.dropItem(ItemRegistry.blankPCB, 1);
-		        			}
 		        			}
 		        		}
 		        	}else {
 		        		entity.setDead();
 		        	}
-		        	
-		        	if(i == 120) {
-		        		i = 0;
-		        	}
 	        }
-	        	if(i == 300) {
-	        		i = 0;
-        }
     }
+        	if(i >= 302) {
+        		i = 0;
+    }
+}
 }

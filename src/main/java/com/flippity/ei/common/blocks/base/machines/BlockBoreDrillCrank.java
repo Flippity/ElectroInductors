@@ -1,5 +1,7 @@
 package com.flippity.ei.common.blocks.base.machines;
 
+import com.flippity.ei.ElectroInductors;
+import com.flippity.ei.client.gui.Tabs;
 import com.flippity.ei.client.renderers.machines.RendererBoreDrillCrank;
 import com.flippity.ei.common.tiles.base.machines.TEBoreDrillCrank;
 
@@ -13,20 +15,18 @@ public class BlockBoreDrillCrank extends BlockContainer{
 
 	public BlockBoreDrillCrank() {
 		super(Material.iron);
+		this.setCreativeTab(Tabs.tabBase);
 	}
 
 	@Override
 	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
 		return new TEBoreDrillCrank();
 	}
-	
-	public static boolean rotate = false;
-	
+		
 	@Override
-    public boolean onBlockActivated(World p_149727_1_, int p_149727_2_, int p_149727_3_, int p_149727_4_, EntityPlayer p_149727_5_, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_)
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_)
     {
-		rotate = true;
-		System.out.println(rotate);
+		player.openGui(ElectroInductors.instance, 0, world, x, y, z);
         return true;
     }
 	

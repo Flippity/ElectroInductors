@@ -61,6 +61,8 @@ item.hazmatHelmet.name=Hazmat Helmet
 item.hazmatChest.name=Hazmat Chest
 item.hazmatPants.name=Hazmat Leggings
 item.hazmatBoots.name=Hazmat Boots
+    //yellowcake
+item.yellowcake.name=Yellowcake
     //antidote
 item.antidote.name=Antidote
     //tab

@@ -2,6 +2,7 @@ package com.flippity.ei;
 
 import com.flippity.ei.client.ClientProxy;
 import com.flippity.ei.client.armor.ArmorRegistry;
+import com.flippity.ei.client.gui.GuiHandler;
 import com.flippity.ei.client.recipes.Recipes;
 import com.flippity.ei.client.recipes.Smelting;
 import com.flippity.ei.client.world.worldgen.ore.AluminumGen;
@@ -20,6 +21,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import efa.api.vanillaoverride.dropoverride.DropOverrides;
 
@@ -36,6 +38,7 @@ public class ElectroInductors {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		instance = this;
+		NetworkRegistry.INSTANCE.registerGuiHandler(this.instance, new GuiHandler());  
 		BlockRegistry.initBlocks();
 		PotionRegistry.initPotion();
 		ArmorRegistry.initItems();
