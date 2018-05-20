@@ -1,31 +1,85 @@
-[22:45:42] [main/INFO]: Setting user: Player883
-[22:45:45] [Client thread/INFO]: LWJGL Version: 2.9.1
-[22:45:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
-[22:46:03] [Sound Library Loader/INFO]: Sound engine started
-[22:46:14] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[22:46:14] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[22:46:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
-[22:46:17] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[22:46:17] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[22:46:18] [Sound Library Loader/INFO]: Sound engine started
-[22:51:31] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[22:51:31] [Server thread/INFO]: Generating keypair
-[22:51:32] [Server thread/INFO]: Preparing start region for level 0
-[22:51:33] [Server thread/INFO]: Changing view distance to 8, from 10
-[22:51:33] [Server thread/INFO]: Player883[local:E:c7ece2d7] logged in with entity id 191 at (-13.045171275249077, 70.0, 2.6485300174946245)
-[22:51:33] [Server thread/INFO]: Player883 joined the game
-[22:51:34] [Server thread/INFO]: Saving and pausing game...
-[22:51:34] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:51:34] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:51:34] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:56:22] [Server thread/INFO]: Player883 has just earned the achievement [Taking Inventory]
-[22:56:22] [Client thread/INFO]: [CHAT] Player883 has just earned the achievement [Taking Inventory]
-[22:56:45] [Client thread/INFO]: Stopping!
-[22:56:45] [Server thread/INFO]: Stopping server
-[22:56:45] [Server thread/INFO]: Saving players
-[22:56:45] [Server thread/INFO]: Saving worlds
-[22:56:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:56:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:56:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:56:45] [Client Shutdown Thread/INFO]: Stopping server
-[22:56:45] [Client Shutdown Thread/INFO]: Saving players
+[20:41:02] [main/INFO]: Setting user: Player192
+[20:41:05] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:41:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[20:41:21] [Sound Library Loader/INFO]: Sound engine started
+[20:41:23] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[20:41:23] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[20:41:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ElectroInductors, FMLFileResourcePack:Mekanism, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin
+[20:41:26] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[20:41:26] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[20:41:27] [Sound Library Loader/INFO]: Sound engine started
+[20:41:46] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:41:46] [Server thread/INFO]: Generating keypair
+[20:41:47] [Server thread/INFO]: Preparing start region for level 0
+[20:41:47] [Server thread/WARN]: Skipping BlockEntity with id 
+[20:41:48] [Server thread/INFO]: Changing view distance to 8, from 10
+[20:42:28] [Server thread/INFO]: Stopping server
+[20:42:28] [Server thread/INFO]: Saving players
+[20:42:28] [Server thread/INFO]: Saving worlds
+[20:42:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:42:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:42:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:42:29] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:42:29] [Server thread/INFO]: Generating keypair
+[20:42:30] [Server thread/INFO]: Preparing start region for level 0
+[20:42:30] [Server thread/WARN]: Skipping BlockEntity with id 
+[20:42:30] [Server thread/INFO]: Changing view distance to 8, from 10
+[20:42:31] [Server thread/INFO]: Player192[local:E:a2355379] logged in with entity id 375 at (2.5, 71.0, -0.5)
+[20:42:31] [Server thread/INFO]: Player192 joined the game
+[20:42:32] [Server thread/INFO]: Saving and pausing game...
+[20:42:32] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:42:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:42:32] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:42:42] [Server thread/INFO]: Player192 has just earned the achievement [Taking Inventory]
+[20:42:42] [Client thread/INFO]: [CHAT] Player192 has just earned the achievement [Taking Inventory]
+[20:43:01] [Server thread/ERROR]: Encountered an unexpected exception
+net.minecraft.util.ReportedException: Ticking memory connection
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614) ~[MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) ~[IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 10
+	at com.flippity.ei.common.tiles.atomic.TECentrifuge.getStackInSlot(TECentrifuge.java:148) ~[TECentrifuge.class:?]
+	at net.minecraft.inventory.Slot.getStack(Slot.java:88) ~[Slot.class:?]
+	at net.minecraft.inventory.Container.getInventory(Container.java:67) ~[Container.class:?]
+	at net.minecraft.inventory.Container.addCraftingToCrafters(Container.java:53) ~[Container.class:?]
+	at cpw.mods.fml.common.network.internal.FMLNetworkHandler.openGui(FMLNetworkHandler.java:88) ~[FMLNetworkHandler.class:?]
+	at net.minecraft.entity.player.EntityPlayer.openGui(EntityPlayer.java:2501) ~[EntityPlayer.class:?]
+	at com.flippity.ei.common.blocks.atomic.BlockCentrifuge.onBlockActivated(BlockCentrifuge.java:36) ~[BlockCentrifuge.class:?]
+	at net.minecraft.server.management.ItemInWorldManager.activateBlockOrUseItem(ItemInWorldManager.java:409) ~[ItemInWorldManager.class:?]
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerBlockPlacement(NetHandlerPlayServer.java:593) ~[NetHandlerPlayServer.class:?]
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:74) ~[C08PacketPlayerBlockPlacement.class:?]
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:122) ~[C08PacketPlayerBlockPlacement.class:?]
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
+	... 5 more
+[20:43:01] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Brock\Desktop\ElectroInductors\eclipse\.\crash-reports\crash-2018-04-18_20.43.01-server.txt
+[20:43:01] [Server thread/INFO]: Stopping server
+[20:43:01] [Server thread/INFO]: Saving players
+[20:43:02] [Server thread/INFO]: Saving worlds
+[20:43:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:43:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:43:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:43:03] [Client thread/FATAL]: Reported exception thrown!
+net.minecraft.util.ReportedException: Rendering screen
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1168) ~[EntityRenderer.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 10
+	at com.flippity.ei.common.tiles.atomic.TECentrifuge.getStackInSlot(TECentrifuge.java:148) ~[TECentrifuge.class:?]
+	at net.minecraft.inventory.Slot.getStack(Slot.java:88) ~[Slot.class:?]
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146977_a(GuiContainer.java:219) ~[GuiContainer.class:?]
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:114) ~[GuiContainer.class:?]
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137) ~[EntityRenderer.class:?]
+	... 11 more

@@ -1,0 +1,21 @@
+import com.flippity.ei.reference.Reference;
+
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.inventory.Container;
+import net.minecraft.util.ResourceLocation;
+
+public class GuiCentrifuge extends GuiContainer{
+
+	public GuiCentrifuge(Container p_i1072_1_) {
+		super(p_i1072_1_);
+	}
+
+	public static ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":" + "textures/gui/blank.png");
+
+
+	@Override
+	protected void drawGuiContainerBackgroundLayer(float p_146976_1_, int x, int y) {
+		
+	}
+
+}

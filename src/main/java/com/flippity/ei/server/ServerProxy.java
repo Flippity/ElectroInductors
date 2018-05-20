@@ -11,10 +11,6 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 
 public class ServerProxy extends CommonProxy{
 	
-	public void registerNetworkStuff(){
-		NetworkRegistry.INSTANCE.registerGuiHandler(ElectroInductors.instance, new GuiHandler());
-	}
-	
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
 		super.preInit(e);
@@ -30,5 +26,9 @@ public class ServerProxy extends CommonProxy{
 	public void postInit(FMLPostInitializationEvent e) {
 		super.postInit(e);
 
+	}
+	
+	public static void registerNetwork() {
+		NetworkRegistry.INSTANCE.registerGuiHandler(ElectroInductors.instance, new GuiHandler());
 	}
 }

@@ -1,23 +1,37 @@
 package com.flippity.ei.common.tiles.atomic;
 
 import com.flippity.ei.common.blocks.atomic.BlockCentrifuge;
+import com.flippity.ei.common.items.ItemRegistry;
 
 import cofh.api.energy.EnergyStorage;
 import cofh.api.energy.IEnergyHandler;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.common.util.ForgeDirection;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.FluidTank;
 
-public class TECentrifuge extends TileEntity implements IEnergyHandler{
+public class TECentrifuge extends TileEntity implements IEnergyHandler, ISidedInventory{
+	private final String tagName = "inv";
 	
+    private final FluidTank tank = new FluidTank(FluidContainerRegistry.BUCKET_VOLUME * 5);
+	
+
+    
 	public static boolean rotate = false;
 	public static int fuel = 0;
 	public static boolean canfill = true;
@@ -25,6 +39,15 @@ public class TECentrifuge extends TileEntity implements IEnergyHandler{
 	protected EnergyStorage storage;
 	public int output;
 	public static int energy;
+	public static int rotation = 0;
+	public static boolean activated = false;
+	
+	private static final int[] slotsBottom = new int[] { 10, 11 };
+	
+	public static final int INV_SIZE = 2;
+
+	private ItemStack[] inventory = new ItemStack[INV_SIZE];
+	
 	
 	public int i = 0;
 	
@@ -40,28 +63,52 @@ public class TECentrifuge extends TileEntity implements IEnergyHandler{
 	@Override
 	public void updateEntity() {
 		i++;
+		rotation++;
 		if(i == 40) {
 			i = 0;
 			if(fuel > 0) {
+				activated = true;
 				fuel -= 1;
 				System.out.println("fuel - 1");
+			}else {
+				activated = false;
 			}
 		}
 		
 		System.out.println(i);
 	}
 
-	@Override
-	public void writeToNBT(NBTTagCompound nbt) {
-		nbt.setInteger("fuel", fuel);
-		nbt.setInteger("time", i);
+	public void writeToNBT(NBTTagCompound compound)
+	{
+		NBTTagList items = new NBTTagList();
+
+		for (int i = 0; i < getSizeInventory(); ++i)
+		{
+			if (getStackInSlot(i) != null)
+			{
+				NBTTagCompound item = new NBTTagCompound();
+				item.setByte("Slot", (byte) i);
+				getStackInSlot(i).writeToNBT(item);
+				items.appendTag(item);
+			}
+		}
+
+		compound.setTag(tagName, items);
+	}
+
+	public void readFromNBT(NBTTagCompound compound)
+	{
+		NBTTagList items = compound.getTagList(tagName, Constants.NBT.TAG_COMPOUND);
+
+		for (int i = 0; i < items.tagCount(); ++i)
+		{
+			NBTTagCompound item = (NBTTagCompound) items.getCompoundTagAt(i);
+			byte slot = item.getByte("Slot");
+
+			if (slot >= 0 && slot < getSizeInventory()) inventory[slot] = ItemStack.loadItemStackFromNBT(item);
+		}
 	}
 	
-	@Override
-	public void readFromNBT(NBTTagCompound nbt) {
-		i = nbt.getInteger("time");
-		fuel = nbt.getInteger("fuel");
-	}
 
 	@Override
 	public boolean canConnectEnergy(ForgeDirection from) {
@@ -83,37 +130,111 @@ public class TECentrifuge extends TileEntity implements IEnergyHandler{
 		return storage.getEnergyStored();
 	}
 
-	public static boolean isItemFuel(ItemStack itemstack){
-		return getItemBurnTime(itemstack) > 0;
-	}
-	
-	public static int getItemBurnTime(ItemStack itemstack){
-			Item item = itemstack.getItem();
-		
-			if(item instanceof ItemBlock && Block.getBlockFromItem(item) != Blocks.air){
-				Block block = Block.getBlockFromItem(item);
-				
-				/*if(block == TMBlock.tutBlock){
-					return 200;
-				}*/
-				
-				/*if(block.getMaterial() == Material.rock){
-					return 300;
-				}*/
-				return 100;
-			}else {
-				return 0;
-			}
-			
-			/*if(item == TMItem.tutItem) return 1600;
-			if(item instanceof ItemTool && ((ItemTool) item).getToolMaterialName().equals("EMERALD")) return 300;
-			return GameRegistry.getFuelValue(itemstack);
-		}*/
-	}
 	
 	@Override
 	public int getMaxEnergyStored(ForgeDirection from) {
 		return storage.getMaxEnergyStored();
+	}
+	
+	@Override
+	public int getSizeInventory() {
+		return this.inventory.length;
+
+	}
+
+	@Override
+	public ItemStack getStackInSlot(int slot)
+	    {
+	        return this.inventory[slot];
+	    }
+	@Override
+	public ItemStack decrStackSize(int p_70298_1_, int p_70298_2_) {
+		return null;
+	}
+
+	@Override
+    public ItemStack getStackInSlotOnClosing(int p_70304_1_)
+    {
+        if (this.inventory[p_70304_1_] != null)
+        {
+            ItemStack itemstack = this.inventory[p_70304_1_];
+            this.inventory[p_70304_1_] = null;
+            return itemstack;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+	@Override
+	public void setInventorySlotContents(int slot, ItemStack itemstack) 
+	{
+		this.inventory[slot] = itemstack;
+
+		if(itemstack != null && itemstack.stackSize > this.getInventoryStackLimit())
+		{
+			itemstack.stackSize = this.getInventoryStackLimit();
+		}
+	}
+
+    /**
+     * Returns the name of the inventory
+     */
+    public String getInventoryName()
+    {
+        return "centrifuge";
+    }
+
+	@Override
+	public boolean hasCustomInventoryName() {
+		return true;
+	}
+
+	@Override
+	public int getInventoryStackLimit() {
+		return 64;
+	}
+
+	@Override
+	public void markDirty() 
+	{
+
+	}
+	
+	@Override
+	public boolean isUseableByPlayer(EntityPlayer player) {
+		return this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord) != this ? false : player.getDistanceSq((double) this.xCoord + 0.5D, (double) this.yCoord + 0.5D, (double) this.zCoord + 0.5D) <= 64.0D;
+	}
+
+	@Override
+	public void openInventory() {
+		
+	}
+
+	@Override
+	public void closeInventory() {
+		
+	}
+
+	@Override
+	public boolean isItemValidForSlot(int slot, ItemStack stack) {
+		return true;
+	}
+
+	@Override
+	public int[] getAccessibleSlotsFromSide(int slots) {
+		return null;
+	}
+
+	@Override
+	public boolean canInsertItem(int p_102007_1_, ItemStack p_102007_2_, int p_102007_3_) {
+		return false;
+	}
+
+	@Override
+	public boolean canExtractItem(int p_102008_1_, ItemStack stack, int p_102008_3_) {
+		return stack.getItem() == ItemRegistry.puckU235;
 	}
 	
 }

@@ -2,8 +2,6 @@ package com.flippity.ei.common.items.base.pcb;
 
 import java.util.List;
 
-import com.flippity.ei.client.gui.GUITest;
-import com.flippity.ei.client.gui.GuiBoreDrillCrank;
 import com.flippity.ei.client.gui.Tabs;
 import com.flippity.ei.common.constants.MetalConstants;
 import com.flippity.ei.reference.Reference;
@@ -61,7 +59,7 @@ public class ItemBlankPCB extends Item{
 	@Override
 	public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player){
 		if(!world.isRemote) {
-			Minecraft.getMinecraft().displayGuiScreen(new GuiBoreDrillCrank(player.inventory, null));
+			//Minecraft.getMinecraft().displayGuiScreen(new GuiBoreDrillCrank(player.inventory, null));
 		}
 		return super.onItemRightClick(item, world, player);
 		

@@ -1,0 +1,6 @@
+package com.flippity.ei.client.gui;
+
+public class GUIs {
+
+	public static Object SMELTER;
+	}

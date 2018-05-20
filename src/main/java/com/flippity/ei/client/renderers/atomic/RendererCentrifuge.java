@@ -33,8 +33,7 @@ public class RendererCentrifuge extends TileEntitySpecialRenderer {
         this.model = new ModelCentrifuge();
         this.model2 = new ModelCentrifugeShell();
     }
-
-
+    
     @Override
     public void renderTileEntityAt(TileEntity te, double x, double y, double z, float scale) {
         //The PushMatrix tells the renderer to "start" doing something.
@@ -57,28 +56,44 @@ public class RendererCentrifuge extends TileEntitySpecialRenderer {
     }
 
 
-    //Set the lighting stuff, so it changes it's brightness properly.       
+    public static int rotation = 0;
+    public static boolean activated = false;
+    
     private void adjustLightFixture(World world, int i, int j, int k, Block block) {
-        //  the if statement checking for if the world is null or not if not renders the block if null renders the item model
-        // != means not equal
         if (world != null) {
             int dir = world.getBlockMetadata(i, j, k);
-
+            
+    		float time = 0;
+    		if(Minecraft.getMinecraft().theWorld != null)
+    		{
+    			time = (float)Minecraft.getMinecraft().theWorld.getWorldTime();
+    		}
+    		
+    		float mult = 8F;
+    		
             GL11.glPushMatrix();
-            //This line actually rotates the renderer.
             GL11.glRotatef(dir * (90F), 0F, 1F, 0F);
 
-            this.model.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
+            //this.model.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
             this.model2.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
-            /*
-             * Place your rendering code here.
-             */
-
             GL11.glPopMatrix();
-            
-          //Stuff to get the dir int, from the block metadata or the tile or whatever
-          //Check the dir and apply rotations
+            if(world.getTileEntity(i, j, k) instanceof TECentrifuge) {
+            	TECentrifuge tileCentrifuge = new TECentrifuge();
+        	   //rotation = tileCentrifuge.rotation;
+        	   //activated = tileCentrifuge.activated;
+            }
 
+            
+
+        	GL11.glPushMatrix();
+        	GL11.glPushMatrix();
+        	if(activated == true) {
+        		GL11.glRotatef(time * mult, 0.0F, time * mult,0.0F);
+        	}
+            this.model.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
+            
+            GL11.glPopMatrix();
+            GL11.glPopMatrix();
                   if (dir == 0)
                   {
                       GL11.glRotatef(-180F, 0.0F, 1.0F, 0.0F);
@@ -98,7 +113,8 @@ public class RendererCentrifuge extends TileEntitySpecialRenderer {
             GL11.glRotatef(180F, 0.0F, 1.0F, 0.0F);
             this.model.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
             this.model2.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
-            }
+
+        }
 
     }
     

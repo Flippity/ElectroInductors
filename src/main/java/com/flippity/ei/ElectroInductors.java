@@ -2,7 +2,6 @@ package com.flippity.ei;
 
 import com.flippity.ei.client.ClientProxy;
 import com.flippity.ei.client.armor.ArmorRegistry;
-import com.flippity.ei.client.gui.GuiHandler;
 import com.flippity.ei.client.recipes.Recipes;
 import com.flippity.ei.client.recipes.Smelting;
 import com.flippity.ei.client.world.worldgen.ore.AluminumGen;
@@ -15,6 +14,7 @@ import com.flippity.ei.common.items.ItemRegistry;
 import com.flippity.ei.common.potion.PotionRegistry;
 import com.flippity.ei.common.tiles.TileEntityRegistry;
 import com.flippity.ei.reference.Reference;
+import com.flippity.ei.server.ServerProxy;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -38,7 +38,6 @@ public class ElectroInductors {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		instance = this;
-		NetworkRegistry.INSTANCE.registerGuiHandler(this.instance, new GuiHandler());  
 		BlockRegistry.initBlocks();
 		PotionRegistry.initPotion();
 		ArmorRegistry.initItems();
@@ -60,6 +59,7 @@ public class ElectroInductors {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		TileEntityRegistry.registerTE();
+		ServerProxy.registerNetwork();
 	}
 
 	@Mod.EventHandler

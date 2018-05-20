@@ -142,8 +142,8 @@ public class BlockRegistry {
 		blockPlasma = new BlockPlasma();
 		GameRegistry.registerBlock(blockPlasma, ItemBlockPlasma.class, "blockPlasma");	
 			//centrifuge
-		/*blockCentrifuge = new BlockCentrifuge();
-		GameRegistry.registerBlock(blockCentrifuge, "blockCentrifuge");*/
+		blockCentrifuge = new BlockCentrifuge();
+		GameRegistry.registerBlock(blockCentrifuge, "blockCentrifuge");
 			//turbine
 		/*blockTurbine = new BlockTurbine();
 		GameRegistry.registerBlock(blockTurbine, ItemBlockPlasma.class, "blockTurbine");*/

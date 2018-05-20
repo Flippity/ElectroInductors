@@ -1,16 +1,17 @@
 package com.flippity.ei.common.blocks.atomic;
 
+import com.flippity.ei.ElectroInductors;
+import com.flippity.ei.client.gui.GuiCentrifuge;
 import com.flippity.ei.client.gui.Tabs;
 import com.flippity.ei.common.items.ItemRegistry;
 import com.flippity.ei.common.tiles.atomic.TECentrifuge;
-import com.flippity.ei.common.tiles.base.machines.TECoalGenerator;
 import com.flippity.ei.reference.Reference;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
@@ -30,7 +31,12 @@ public class BlockCentrifuge extends BlockContainer{
 	
 	@Override
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int meta, float sidex, float sidey, float sidez) {
-		if (world.isRemote) {
+		
+		if(!world.isRemote){
+			player.openGui(ElectroInductors.instance, 0, world, x, y, z);
+		}
+		
+		/*if (world.isRemote) {
 			System.out.println("world is remote");
 			TileEntity tile = world.getTileEntity(x, y, z);
 			if(tile instanceof TECentrifuge){
@@ -48,7 +54,7 @@ public class BlockCentrifuge extends BlockContainer{
 					return false;
 				}
 			}
-		}
+		}*/
 		return false;
 	}
 	
